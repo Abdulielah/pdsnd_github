@@ -182,10 +182,10 @@ def user_stats(df):
 def display_data(df):
     raw = 0
     while True:
-        view_data = input("Would you like to view 5 rows of individual trip data? Enter yes or no?").lower()
+        view_data = input("Would you like to view 10 rows of individual trip data? Enter yes or no?").lower()
         if view_data == 'yes':
-            raw += 5
-            print(df.iloc[raw : raw + 5])
+            raw += 10
+            print(df.iloc[raw : raw + 10])
 
             again = input("Do you want to see more? Yes or No").lower()
             if again == 'no':
